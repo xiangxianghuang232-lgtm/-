@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🇳🇱 荷兰进线日报看板 — 6.23</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0f172a; color: #e2e8f0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding: 24px; }
+  .banner { background: linear-gradient(135deg, #1e293b, #0f172a); border: 1px solid #334155; border-radius: 16px; padding: 28px; margin-bottom: 20px; display: flex; align-items: center; gap: 20px; }
+  .banner h1 { font-size: 24px; }
+  .banner .sub { color: #94a3b8; font-size: 13px; margin-top: 4px; }
+  .flag-nl { font-size: 48px; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
+  @media (max-width:600px) { .kpi-grid { grid-template-columns: repeat(2, 1fr); } }
+  .kpi { background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 16px; text-align: center; }
+  .kpi .val { font-size: 26px; font-weight: 700; margin: 4px 0; }
+  .kpi .lbl { font-size: 11px; color: #64748b; }
+  .card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+  .card-title { font-size: 15px; font-weight: 600; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width:800px) { .grid2 { grid-template-columns: 1fr; } }
+  .bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .bar-label { width: 50px; font-size: 11px; color: #94a3b8; text-align: right; flex-shrink: 0; }
+  .bar-track { flex: 1; height: 20px; background: #0f172a; border-radius: 4px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 4px; display: flex; align-items: center; padding-left: 6px; font-size: 10px; color: #fff; font-weight: 600; }
+  .inline-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+  .pass { color: #22c55e; }
+  .fail { color: #ef4444; }
+  .dsp-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .dsp-table th { text-align: left; color: #64748b; font-weight: 400; font-size: 11px; padding: 6px 8px; border-bottom: 1px solid #334155; }
+  .dsp-table td { padding: 8px; border-bottom: 1px solid #0f172a; }
+  .dsp-table tr:last-child td { border-bottom: none; }
+  .dsp-rank { color: #64748b; width: 24px; }
+  .num { font-weight: 600; color: #60a5fa; }
+  .contact { color: #94a3b8; font-size: 11px; }
+  .section-title { font-size: 16px; font-weight: 600; margin: 20px 0 12px; padding-left: 12px; border-left: 3px solid #f97316; }
+  .metric-row { display: flex; justify-content: space-between; padding: 6px 0; font-size: 13px; border-bottom: 1px solid #0f172a; }
+  .metric-row:last-child { border-bottom: none; }
+  .metric-row .lbl { color: #94a3b8; }
+  .stage-pie { display: flex; gap: 16px; justify-content: center; padding: 12px 0; }
+  .stage-item { text-align: center; }
+  .stage-dot { width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+  .stage-pct { font-size: 11px; color: #94a3b8; }
+</style>
+</head>
+<body>
+
+<div class="banner">
+  <div class="flag-nl">🇳🇱</div>
+  <div>
+    <h1>荷兰 进线日报看板</h1>
+    <div class="sub">2026年6月23日 · 数据来源：荷兰进线日报面板</div>
+  </div>
+</div>
+
+<div class="kpi-grid">
+  <div class="kpi"><div class="lbl">整体进线率</div><div class="val" style="color:#22c55e">4.16%</div><div class="lbl">✅ 达标 ≤6.00%</div></div>
+  <div class="kpi"><div class="lbl">环比 6.22</div><div class="val" style="color:#22c55e">↓ 0.73pp</div><div class="lbl">趋势向好</div></div>
+  <div class="kpi"><div class="lbl">进线量</div><div class="val">3,219</div><div class="lbl">较6.22 -299</div></div>
+  <div class="kpi"><div class="lbl">中心签入量（前7天均值）</div><div class="val">77,426</div><div class="lbl">较6.22 +5,502</div></div>
+</div>
+
+<div class="grid2">
+  <div class="card">
+    <div class="card-title">📊 进线环节分布</div>
+    <div class="stage-pie">
+      <div class="stage-item"><div class="stage-dot" style="background:#3b82f6">17%</div><div>派送前</div><div class="stage-pct">553</div></div>
+      <div class="stage-item"><div class="stage-dot" style="background:#f97316">37%</div><div>派送中</div><div class="stage-pct">1,191</div></div>
+      <div class="stage-item"><div class="stage-dot" style="background:#8b5cf6">29%</div><div>派送后</div><div class="stage-pct">919</div></div>
+      <div class="stage-item"><div class="stage-dot" style="background:#ef4444">11%</div><div>退回转运</div><div class="stage-pct">341</div></div>
+      <div class="stage-item"><div class="stage-dot" style="background:#64748b">7%</div><div>不涉及</div><div class="stage-pct">215</div></div>
+    </div>
+    <div style="font-size:12px;text-align:center;color:#f97316;font-weight:600;margin-top:4px">⬆ Top 环节：派送中（37%）→ 关注派送效率</div>
+  </div>
+  <div class="card">
+    <div class="card-title">📈 近7天签入量 & 进线率趋势</div>
+    <style>
+      .chart-wrap { position: relative; width: 100%; height: 180px; margin-top: 8px; }
+      .chart-wrap svg { width: 100%; height: 100%; }
+      .chart-legend { display: flex; gap: 16px; justify-content: center; font-size: 11px; margin-top: 8px; }
+      .legend-dot { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: middle; }
+    </style>
+    <div class="chart-wrap">
+      <svg viewBox="0 0 340 180" preserveAspectRatio="xMidYMid meet">
+        <!-- Grid lines -->
+        <line x1="45" y1="20" x2="330" y2="20" stroke="#1e293b" stroke-width="0.5"/>
+        <line x1="45" y1="60" x2="330" y2="60" stroke="#1e293b" stroke-width="0.5"/>
+        <line x1="45" y1="100" x2="330" y2="100" stroke="#1e293b" stroke-width="0.5"/>
+        <line x1="45" y1="140" x2="330" y2="140" stroke="#1e293b" stroke-width="0.5"/>
+        <!-- Target line 6% -->
+        <line x1="45" y1="29" x2="330" y2="29" stroke="#f59e0b" stroke-width="1" stroke-dasharray="4,3"/>
+        <text x="332" y="33" fill="#f59e0b" font-size="7">目标6%</text>
+        <!-- Bars (签入量) - max=77,426 -> 120px height -->
+        <rect x="50" y="75" width="32" height="65" fill="#1e3a5f" rx="2" opacity="0.8"/>
+        <rect x="90" y="72" width="32" height="68" fill="#1e3a5f" rx="2" opacity="0.8"/>
+        <rect x="130" y="73" width="32" height="67" fill="#1e3a5f" rx="2" opacity="0.8"/>
+        <rect x="170" y="71" width="32" height="69" fill="#1e3a5f" rx="2" opacity="0.8"/>
+        <rect x="210" y="71" width="32" height="69" fill="#1e3a5f" rx="2" opacity="0.8"/>
+        <rect x="250" y="72" width="32" height="68" fill="#1e3a5f" rx="2" opacity="0.8"/>
+        <rect x="290" y="66" width="32" height="74" fill="#60a5fa" rx="2" opacity="0.9"/>
+        <!-- 签入量 labels -->
+        <text x="66" y="148" fill="#64748b" font-size="7" text-anchor="middle">6/17</text>
+        <text x="106" y="148" fill="#64748b" font-size="7" text-anchor="middle">6/18</text>
+        <text x="146" y="148" fill="#64748b" font-size="7" text-anchor="middle">6/19</text>
+        <text x="186" y="148" fill="#64748b" font-size="7" text-anchor="middle">6/20</text>
+        <text x="226" y="148" fill="#64748b" font-size="7" text-anchor="middle">6/21</text>
+        <text x="266" y="148" fill="#64748b" font-size="7" text-anchor="middle">6/22</text>
+        <text x="306" y="148" fill="#e2e8f0" font-size="7" text-anchor="middle" font-weight="600">6.23</text>
+        <!-- 签入量 values -->
+        <text x="66" y="72" fill="#60a5fa" font-size="6" text-anchor="middle">68K</text>
+        <text x="106" y="69" fill="#60a5fa" font-size="6" text-anchor="middle">71K</text>
+        <text x="146" y="70" fill="#60a5fa" font-size="6" text-anchor="middle">70K</text>
+        <text x="186" y="68" fill="#60a5fa" font-size="6" text-anchor="middle">72K</text>
+        <text x="226" y="68" fill="#60a5fa" font-size="6" text-anchor="middle">73K</text>
+        <text x="266" y="69" fill="#60a5fa" font-size="6" text-anchor="middle">72K</text>
+        <text x="306" y="63" fill="#60a5fa" font-size="7" text-anchor="middle" font-weight="600">77K</text>
+        <!-- Line for 进线率 - points at y positions -->
+        <!-- 6/17:5.21%->y=36, 6/18:4.20%->y=47, 6/19:4.30%->y=46, 6/20:1.02%->y=117, 6/21:0.46%->y=131, 6/22:4.89%->y=40, 6/23:4.16%->y=48 -->
+        <!-- Scale: 0% at y=140, 6% at y=29, so y = 140 - (rate*100/6*111) -->
+        <!-- 5.21% -> 140-96=44, 4.20%->140-78=62, 4.30%->140-80=60, 1.02%->140-19=121, 0.46%->140-9=131, 4.89%->140-91=49, 4.16%->140-77=63 -->
+        <polyline points="66,44 106,62 146,60 186,121 226,131 266,49 306,63" fill="none" stroke="#f97316" stroke-width="2" stroke-linejoin="round"/>
+        <!-- Dots -->
+        <circle cx="66" cy="44" r="3" fill="#f97316"/>
+        <circle cx="106" cy="62" r="3" fill="#f97316"/>
+        <circle cx="146" cy="60" r="3" fill="#f97316"/>
+        <circle cx="186" cy="121" r="3" fill="#f97316"/>
+        <circle cx="226" cy="131" r="3" fill="#f97316"/>
+        <circle cx="266" cy="49" r="3" fill="#f97316"/>
+        <circle cx="306" cy="63" r="3.5" fill="#ef4444" stroke="#fff" stroke-width="1"/>
+        <!-- 进线率 labels on dots -->
+        <text x="66" y="41" fill="#f97316" font-size="6" text-anchor="middle">5.21%</text>
+        <text x="106" y="59" fill="#f97316" font-size="6" text-anchor="middle">4.20%</text>
+        <text x="146" y="57" fill="#f97316" font-size="6" text-anchor="middle">4.30%</text>
+        <text x="186" y="118" fill="#f97316" font-size="6" text-anchor="middle">1.02%</text>
+        <text x="226" y="128" fill="#f97316" font-size="6" text-anchor="middle">0.46%</text>
+        <text x="266" y="46" fill="#f97316" font-size="6" text-anchor="middle">4.89%</text>
+        <text x="306" y="60" fill="#ef4444" font-size="7" text-anchor="middle" font-weight="600">4.16%</text>
+        <!-- Y-axis labels -->
+        <text x="43" y="24" fill="#475569" font-size="6" text-anchor="end">6%</text>
+        <text x="43" y="64" fill="#475569" font-size="6" text-anchor="end">4%</text>
+        <text x="43" y="104" fill="#475569" font-size="6" text-anchor="end">2%</text>
+        <text x="43" y="144" fill="#475569" font-size="6" text-anchor="end">0%</text>
+      </svg>
+    </div>
+    <div class="chart-legend">
+      <span><span class="legend-dot" style="background:#1e3a5f"></span>签入量</span>
+      <span><span class="legend-dot" style="background:#f97316"></span>进线率</span>
+      <span><span class="legend-dot" style="background:#f59e0b"></span>目标6%</span>
+    </div>
+  </div>
+</div>
+
+<div class="section-title">🏭 中心环节 · 按咨询量排名（派送前+退回转运中心）</div>
+<div class="grid2">
+  <div class="card">
+    <div class="card-title">📊 咨询量排名</div>
+    <div style="display:flex;justify-content:space-around;padding:12px;background:#0f172a;border-radius:8px;margin-bottom:12px">
+      <div style="text-align:center"><div style="font-size:11px;color:#94a3b8">派送前</div><div style="font-size:18px;font-weight:700;color:#60a5fa">553</div></div>
+      <div style="text-align:center"><div style="font-size:11px;color:#94a3b8">退回转运</div><div style="font-size:18px;font-weight:700;color:#60a5fa">341</div></div>
+      <div style="text-align:center"><div style="font-size:11px;color:#94a3b8">合计咨询量</div><div style="font-size:22px;font-weight:700;color:#f97316">894</div></div>
+      <div style="text-align:center"><div style="font-size:11px;color:#94a3b8">进线率</div><div style="font-size:18px;font-weight:700;color:#22c55e">1.15%</div></div>
+    </div>
+    <table class="dsp-table">
+      <tr><th>#</th><th>中心</th><th>派送前</th><th>退回转运</th><th>合计</th><th>进线率</th><th>状态</th></tr>
+      <tr><td class="dsp-rank">1</td><td><b>AMS</b></td><td>358</td><td>157</td><td class="num">515</td><td>1.41%</td><td class="fail">❌</td></tr>
+      <tr><td class="dsp-rank">2</td><td><b>ZTL</b></td><td>92</td><td>77</td><td class="num">169</td><td>1.39%</td><td class="fail">❌</td></tr>
+      <tr><td class="dsp-rank">3</td><td><b>ZWO</b></td><td>44</td><td>78</td><td class="num">122</td><td>0.97%</td><td class="pass">✅</td></tr>
+      <tr><td class="dsp-rank">4</td><td><b>RTD</b></td><td>59</td><td>29</td><td class="num">88</td><td>0.54%</td><td class="pass">✅</td></tr>
+    </table>
+    <div style="font-size:11px;color:#94a3b8;margin-top:8px">合计：派送前553 / 退回转运341 / 进线率1.15% ✅</div>
+  </div>
+  <div class="card">
+    <div class="card-title">⚠️ 重点关注</div>
+    <div style="font-size:13px;padding:8px 0;border-bottom:1px solid #334155"><b>AMS</b> — 咨询量515（最高），进线率1.41%超目标，主要问题为<b>催派</b></div>
+    <div style="font-size:13px;padding:8px 0"><b>ZTL</b> — 咨询量169，进线率1.39%超目标，主要问题为<b>催派</b></div>
+  </div>
+</div>
+
+<div class="section-title">🚚 终端环节 · 按咨询量排名（派送中+派送后）</div>
+<div class="grid2">
+  <div class="card">
+    <div class="card-title">📊 战区咨询量排名</div>
+    <div style="display:flex;justify-content:space-around;padding:12px;background:#0f172a;border-radius:8px;margin-bottom:12px">
+      <div style="text-align:center"><div style="font-size:11px;color:#94a3b8">派送中</div><div style="font-size:18px;font-weight:700;color:#60a5fa">1,191</div></div>
+      <div style="text-align:center"><div style="font-size:11px;color:#94a3b8">派送后</div><div style="font-size:18px;font-weight:700;color:#60a5fa">919</div></div>
+      <div style="text-align:center"><div style="font-size:11px;color:#94a3b8">合计咨询量</div><div style="font-size:22px;font-weight:700;color:#f97316">2,110</div></div>
+      <div style="text-align:center"><div style="font-size:11px;color:#94a3b8">终端率</div><div style="font-size:18px;font-weight:700;color:#22c55e">2.73%</div></div>
+    </div>
+    <table class="dsp-table">
+      <tr><th>#</th><th>战区</th><th>派送中</th><th>派送后</th><th>合计</th><th>终端率</th><th>状态</th></tr>
+      <tr><td class="dsp-rank">1</td><td><b>North</b></td><td>646</td><td>419</td><td class="num">1,065</td><td>2.60%</td><td class="pass">✅</td></tr>
+      <tr><td class="dsp-rank">2</td><td><b>South</b></td><td>484</td><td>488</td><td class="num">972</td><td>2.71%</td><td class="pass">✅</td></tr>
+    </table>
+    <div style="font-size:11px;color:#94a3b8;margin-top:8px">合计：派送中1,191 / 派送后919 / 终端率2.73% ✅</div>
+  </div>
+  <div class="card">
+    <div class="card-title">🏆 DSP TOP 3（终端环节）</div>
+    <table class="dsp-table">
+      <tr><th>#</th><th>DSP</th><th>战区</th><th>终端进线</th><th>主要问题</th><th>负责人</th></tr>
+      <tr><td class="dsp-rank">1</td><td><b>MTN</b></td><td>North</td><td class="num">84</td><td>催派、签收未收到</td><td class="contact">敬雪平 Xueping</td></tr>
+      <tr><td class="dsp-rank">2</td><td><b>DET</b></td><td>South</td><td class="num">99</td><td>催派、签收未收到</td><td class="contact">陈杭 Monica</td></tr>
+      <tr><td class="dsp-rank">3</td><td><b>C4T</b></td><td>South</td><td class="num">94</td><td>催派、签收未收到</td><td class="contact">金梓宇 Ziyu</td></tr>
+    </table>
+  </div>
+</div>
+
+<div style="text-align:center;padding:20px 0 8px;font-size:11px;color:#475569">
+  荷兰进线日报面板 · 2026.06.23 · 终端TOP3按派送中+派送后排序
+</div>
+
+</body>
+</html>
