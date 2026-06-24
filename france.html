@@ -69,14 +69,31 @@
 <div class="grid2">
   <div class="card">
     <div class="card-title">📊 进线环节分布</div>
-    <div class="stage-pie">
-      <div class="stage-item"><div class="stage-dot" style="background:#3b82f6">19%</div><div>派送前</div><div class="stage-pct">1,808</div></div>
-      <div class="stage-item"><div class="stage-dot" style="background:#f97316">41%</div><div>派送中</div><div class="stage-pct">3,871</div></div>
-      <div class="stage-item"><div class="stage-dot" style="background:#8b5cf6">20%</div><div>派送后</div><div class="stage-pct">1,918</div></div>
-      <div class="stage-item"><div class="stage-dot" style="background:#ef4444">14%</div><div>退回转运</div><div class="stage-pct">1,362</div></div>
-      <div class="stage-item"><div class="stage-dot" style="background:#64748b">6%</div><div>不涉及</div><div class="stage-pct">572</div></div>
+    <div style="display:flex;align-items:center;gap:12px;padding:8px 0">
+      <svg viewBox="0 0 120 120" width="120" height="120">
+        <!-- 派送前 19%: 0°-68.4° -->
+        <path d="M60,60 L60,10 A50,50 0 0,1 106.4,41.5 Z" fill="#3b82f6"/>
+        <!-- 派送中 41%: 68.4°-214.6° -->
+        <path d="M60,60 L106.4,41.5 A50,50 0 0,1 31.7,101.2 Z" fill="#f97316"/>
+        <!-- 派送后 20%: 214.6°-286.6° -->
+        <path d="M60,60 L31.7,101.2 A50,50 0 0,1 12.1,45.5 Z" fill="#8b5cf6"/>
+        <!-- 退回转运 14%: 286.6°-338° -->
+        <path d="M60,60 L12.1,45.5 A50,50 0 0,1 41.6,13.5 Z" fill="#ef4444"/>
+        <!-- 不涉及 6%: 338°-360° -->
+        <path d="M60,60 L41.6,13.5 A50,50 0 0,1 60,10 Z" fill="#64748b"/>
+        <circle cx="60" cy="60" r="25" fill="#1e293b"/>
+        <text x="60" y="57" fill="#e2e8f0" font-size="11" font-weight="700" text-anchor="middle">9,531</text>
+        <text x="60" y="70" fill="#64748b" font-size="7" text-anchor="middle">总进线</text>
+      </svg>
+      <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:4px 12px;font-size:11px">
+        <div><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#3b82f6;vertical-align:middle;margin-right:4px"></span>派送前 <b style="color:#e2e8f0">1,808</b> <span style="color:#64748b">19%</span></div>
+        <div><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#f97316;vertical-align:middle;margin-right:4px"></span>派送中 <b style="color:#e2e8f0">3,871</b> <span style="color:#64748b">41%</span></div>
+        <div><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#8b5cf6;vertical-align:middle;margin-right:4px"></span>派送后 <b style="color:#e2e8f0">1,918</b> <span style="color:#64748b">20%</span></div>
+        <div><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#ef4444;vertical-align:middle;margin-right:4px"></span>退回转运 <b style="color:#e2e8f0">1,362</b> <span style="color:#64748b">14%</span></div>
+        <div><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#64748b;vertical-align:middle;margin-right:4px"></span>不涉及 <b style="color:#e2e8f0">572</b> <span style="color:#64748b">6%</span></div>
+      </div>
     </div>
-    <div style="font-size:12px;text-align:center;color:#f97316;font-weight:600;margin-top:4px">⬆ Top 环节：派送中（41%）→ 关注末端派送效率</div>
+    <div style="font-size:12px;text-align:center;color:#f97316;font-weight:600;padding-top:4px;border-top:1px solid #0f172a">⬆ Top 环节：派送中（41%）→ 关注末端派送效率</div>
   </div>
   <div class="card">
     <div class="card-title">📈 近7天签入量 & 进线率趋势</div>
